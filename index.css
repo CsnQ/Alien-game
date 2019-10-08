@@ -2,3 +2,74 @@
 .isDead{
     color:red;
 }
+
+
+.queen, .worker, .drone{
+    height: 80px;
+    width: 80px;
+
+}
+.queen{
+    background-image: url("./img/queen-alien2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.worker{
+    background-image: url("./img/worker-alien2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.drone{
+    background-image: url("./img/drone2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#alien-territory{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    margin: 20px;
+    padding: 20px;
+}
+
+.queen-territory, .worker-territory, .drone-territory{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.queen-territory{
+    justify-content: center;
+}
+
+.hide{
+    display: none;
+}
+
+#ship-territory{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#ship{
+    background-image: url(./img/spaceship.png);
+    border: 2px solid red;
+    padding: 0;
+    height: 150px;
+    width: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.body{
+    height: 100vh;
+}
