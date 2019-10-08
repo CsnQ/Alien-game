@@ -24,7 +24,9 @@ class Worker extends Alien {
   damageTaken = 10;
 }
 
-class Drone extends Alien {}
+class Drone extends Alien {
+    //drones are currently just generic aliens for now 
+}
 
 class Queen extends Alien {
   isQueen = true;
@@ -72,6 +74,9 @@ const aliens = createAliens();
 
 const checkAlien = (listOfAliens, alienHit) => {
   if (listOfAliens[alienHit].isDead) {
+      let elements = [...document.getElementsByTagName('p')];
+      elements[alienHit].classList.add('isDead');
+
     console.log("ALIEN " + alienHit + " IS ALREADY DEAD");
     return false;
   } else {
@@ -94,6 +99,7 @@ const fire = aliens => {
   } else {
     if (canInflictDamage) {
       listOfAliens[alienHit].takeDamage();
+      checkAlien(listOfAliens, alienHit);
     } else {
       fire(aliens);
     }
