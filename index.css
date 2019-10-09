@@ -1,5 +1,30 @@
+/* font-family: 'Cabin', sans-serif; */
+/* font-family: 'Turret Road', cursive; */
+
 .isDead {
  display: none;
+}
+
+.game-area{
+  background-color: black;
+  height: 100vh;
+}
+
+.page-title{
+  font-family: 'Turret Road', cursive;
+  font-size: 50px;
+  color: white;
+  letter-spacing: 2px;
+  padding: 10px;
+  padding-top:12px;
+  text-shadow: 
+  .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8, 
+  .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
+  .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
+  .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757, 
+  .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b, 
+  .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
+  .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b;
 }
 
 .queen,
@@ -8,6 +33,26 @@
   height: 80px;
   width: 80px;
 }
+
+.hitpoints{
+  font-family: 'Cabin', sans-serif;
+  text-shadow: 
+  .1vw 0vw   2vw rgb(18, 75, 219), .2vw 0vw   2vw rgb(18, 75, 219), .2vw 0vw   2vw rgb(18, 75, 219), 
+  .1vw 0vw   1vw #0034BA, .2vw 0vw   1vw #0034BA, .2vw 0vw   5vw #0034BA, 
+  .1vw 0vw  8vw #002992, .2vw 0vw  30vw #002992, .2vw 0vw  10vw #002992;
+  letter-spacing: 2px;
+}
+
+.hipoints-explosion{
+  font-family: 'Cabin', sans-serif;
+  text-shadow: 
+  .1vw 0vw   2vw #d85723, .2vw 0vw   2vw #d85723, .2vw 0vw   2vw #d85723, 
+  .1vw 0vw   1vw #8f0416, .2vw 0vw   1vw #8f0416, .2vw 0vw   5vw #8f0416, 
+  .1vw 0vw  8vw #5c020e, .2vw 0vw  30vw #5c020e, .2vw 0vw  10vw #5c020e;
+  font-size: 2em;
+  transition:1s; 
+}
+
 .queen {
   background-image: url("./img/queen-alien2.png");
   background-position: center;
@@ -53,23 +98,34 @@
 
 #ship {
   background-image: url(./img/spaceship.png);
-  border: 2px solid grey;
   padding: 0;
   height: 150px;
   width: 100px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  box-shadow: 9px 9px #999;
+  box-shadow:   
+  .1vw 0vw   2vw rgb(18, 75, 219), .2vw 0vw   2vw rgb(18, 75, 219), .2vw 0vw   2vw rgb(18, 75, 219), 
+  .1vw 0vw   1vw #0034BA, .2vw 0vw   1vw #0034BA, .2vw 0vw   5vw #0034BA, 
+  .1vw 0vw  8vw #002992, .2vw 0vw  30vw #002992, .2vw 0vw  10vw #002992;
+  transition: 50ms;
 }
 
 #ship:active {
   box-shadow: 5px 5px #666;
   transform: translateY(4px);
+  transition: 60ms;
+  box-shadow: 
+  .1vw 0vw   2vw #d85723, .2vw 0vw   2vw #d85723, .2vw 0vw   2vw #d85723, 
+  .1vw 0vw   1vw #8f0416, .2vw 0vw   1vw #8f0416, .2vw 0vw   5vw #8f0416, 
+  .1vw 0vw  8vw #5c020e, .2vw 0vw  30vw #5c020e, .2vw 0vw  10vw #5c020e;
+}
+
+.hitpoints{
+  color: white;
 }
 
 .body {
   height: 100vh;
 }
-
 
