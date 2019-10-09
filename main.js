@@ -2,8 +2,8 @@ class Alien {
   hitPoints = 60;
   damageTaken = 12;
   isDead = false;
-  isEnemy = true;
-  isQueen = false;
+  // isEnemy = true;
+  // isQueen = false;
   checkHP() {
     if (this.hitPoints <= 0) {
       this.isDead = true;
@@ -17,6 +17,8 @@ class Alien {
     console.log("my new HP is: " + this.hitPoints);
     this.checkHP();
   }
+
+
 }
 
 class Worker extends Alien {
@@ -29,7 +31,7 @@ class Drone extends Alien {
 }
 
 class Queen extends Alien {
-  isQueen = true;
+  // isQueen = true;
   hitPoints = 80;
   damageTaken = 7;
 }
@@ -43,6 +45,15 @@ class Ship {
 }
 
 const battleStarGalatica = new Ship();
+
+const initialiseScoresOnScreen = (arrayOfAliens) => {
+  let elements = [...document.getElementsByClassName('hitpoints')];
+
+  for (let i = 0; i<elements.length;i++){
+    elements[i].innerHTML = arrayOfAliens[i].hitPoints;
+  }
+
+}
 
 const createAliens = () => {
   const numQueen = 1;
@@ -67,7 +78,9 @@ const createAliens = () => {
     drones.push(drone);
   }
 
-  return [queen, workers, drones].flat();
+  arrayOfAliens = [queen, workers, drones].flat();
+  initialiseScoresOnScreen(arrayOfAliens);
+  return arrayOfAliens
 };
 
 const aliens = createAliens();
@@ -89,6 +102,14 @@ const gameOver = () => {
   location.reload();
 };
 
+const updateHTMLWithPoints=(listOfAliens, alienHit)=>{
+  let elements = [...document.getElementsByClassName('hitpoints')];
+  elements[alienHit].innerHTML = listOfAliens[alienHit].hitPoints;
+
+}
+
+
+
 const fire = aliens => {
   const listOfAliens = aliens;
   let alienHit = battleStarGalatica.fireAtAlien();
@@ -100,6 +121,7 @@ const fire = aliens => {
     if (canInflictDamage) {
       listOfAliens[alienHit].takeDamage();
       checkAlien(listOfAliens, alienHit);
+      updateHTMLWithPoints(listOfAliens, alienHit);
     } else {
       fire(aliens);
     }
