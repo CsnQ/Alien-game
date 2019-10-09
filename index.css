@@ -27,6 +27,19 @@
   .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b;
 }
 
+h3{
+  font-family: 'Turret Road', cursive;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 2px;
+  padding: 10px;
+  padding-top:12px;
+  text-shadow: 
+  .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757, 
+  .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b, 
+  .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b;
+}
+
 .queen,
 .worker,
 .drone {
