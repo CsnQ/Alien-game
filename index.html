@@ -6,14 +6,17 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Cabin|Turret+Road&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
         <script src="main.js" async defer></script>
     </head>
     <body>
-
+    <section class="game-area">
+        <h1 class = "page-title">Alien Attack</h1>
         <section id="alien-territory">
             <section class="queen-territory">
-                <p class = "queen" ><span class="hitpoints"></span></p>
+                <p id = "queen" class = "queen" ><span class="hitpoints"></span></p>
             </section>
 
             <section class="worker-territory">
@@ -36,10 +39,10 @@
         </section>
 
         <section id="ship-territory">
-            <span id="ship" onclick="fire(aliens)">ship</span>
+            <span id="ship" onclick="fire(aliens)"></span>
         </section>
     
-      
+    </section>
 
     </body>
 </html>
