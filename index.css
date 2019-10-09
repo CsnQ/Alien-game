@@ -2,42 +2,42 @@
 /* font-family: 'Turret Road', cursive; */
 
 .isDead {
- display: none;
+  display: none;
 }
 
-.game-area{
+.game-area {
   background-color: black;
   height: 100vh;
 }
 
-.page-title{
-  font-family: 'Turret Road', cursive;
+.page-title {
+  font-family: "Turret Road", cursive;
   font-size: 50px;
   color: white;
   letter-spacing: 2px;
   padding: 10px;
-  padding-top:12px;
-  text-shadow: 
-  .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8, 
-  .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
-  .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
-  .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757, 
-  .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b, 
-  .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
-  .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b;
+  padding-top: 12px;
+  text-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
+    0.4vw 0vw 0.25vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.2vw 0vw 0vw #f25757,
+    0.4vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.2vw 0vw 0.1vw #f25757,
+    0.4vw 0vw 0.1vw #f25757, 0.1vw 0vw 2vw #f25757, 0.2vw 0vw 2vw #f25757,
+    0.4vw 0vw 2vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
+    0.4vw 0vw 5vw #e50b0b, 0.1vw 0vw 5vw #e50b0b, 0.2vw 0vw 20vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b;
 }
 
-h3{
-  font-family: 'Turret Road', cursive;
+h2 {
+  font-family: "Turret Road", cursive;
   font-size: 20px;
   color: white;
   letter-spacing: 2px;
   padding: 10px;
-  padding-top:12px;
-  text-shadow: 
-  .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757, 
-  .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b, 
-  .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b;
+  padding-top: 12px;
+  text-shadow: 0.1vw 0vw 2vw #f25757, 0.2vw 0vw 2vw #f25757,
+    0.4vw 0vw 2vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
+    0.4vw 0vw 5vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b;
 }
 
 .queen,
@@ -47,23 +47,24 @@ h3{
   width: 80px;
 }
 
-.hitpoints{
-  font-family: 'Cabin', sans-serif;
-  text-shadow: 
-  .1vw 0vw   2vw rgb(18, 75, 219), .2vw 0vw   2vw rgb(18, 75, 219), .2vw 0vw   2vw rgb(18, 75, 219), 
-  .1vw 0vw   1vw #0034BA, .2vw 0vw   1vw #0034BA, .2vw 0vw   5vw #0034BA, 
-  .1vw 0vw  8vw #002992, .2vw 0vw  30vw #002992, .2vw 0vw  10vw #002992;
+.hitpoints {
+  font-family: "Cabin", sans-serif;
+  color: white;
+  text-shadow: 0.1vw 0vw 2vw rgb(18, 75, 219), 0.2vw 0vw 2vw rgb(18, 75, 219),
+    0.2vw 0vw 2vw rgb(18, 75, 219), 0.1vw 0vw 1vw #0034ba, 0.2vw 0vw 1vw #0034ba,
+    0.2vw 0vw 5vw #0034ba, 0.1vw 0vw 8vw #002992, 0.2vw 0vw 30vw #002992,
+    0.2vw 0vw 10vw #002992;
   letter-spacing: 2px;
 }
 
-.hipoints-explosion{
-  font-family: 'Cabin', sans-serif;
-  text-shadow: 
-  .1vw 0vw   2vw #d85723, .2vw 0vw   2vw #d85723, .2vw 0vw   2vw #d85723, 
-  .1vw 0vw   1vw #8f0416, .2vw 0vw   1vw #8f0416, .2vw 0vw   5vw #8f0416, 
-  .1vw 0vw  8vw #5c020e, .2vw 0vw  30vw #5c020e, .2vw 0vw  10vw #5c020e;
+.hipoints-explosion {
+  font-family: "Cabin", sans-serif;
+  text-shadow: 0.1vw 0vw 2vw #d85723, 0.2vw 0vw 2vw #d85723,
+    0.2vw 0vw 2vw #d85723, 0.1vw 0vw 1vw #8f0416, 0.2vw 0vw 1vw #8f0416,
+    0.2vw 0vw 5vw #8f0416, 0.1vw 0vw 8vw #5c020e, 0.2vw 0vw 30vw #5c020e,
+    0.2vw 0vw 10vw #5c020e;
   font-size: 2em;
-  transition:1s; 
+  transition: 1s;
 }
 
 .queen {
@@ -117,10 +118,10 @@ h3{
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  box-shadow:   
-  .1vw 0vw   2vw rgb(18, 75, 219), .2vw 0vw   2vw rgb(18, 75, 219), .2vw 0vw   2vw rgb(18, 75, 219), 
-  .1vw 0vw   1vw #0034BA, .2vw 0vw   1vw #0034BA, .2vw 0vw   5vw #0034BA, 
-  .1vw 0vw  8vw #002992, .2vw 0vw  30vw #002992, .2vw 0vw  10vw #002992;
+  box-shadow: 0.1vw 0vw 2vw rgb(18, 75, 219), 0.2vw 0vw 2vw rgb(18, 75, 219),
+    0.2vw 0vw 2vw rgb(18, 75, 219), 0.1vw 0vw 1vw #0034ba, 0.2vw 0vw 1vw #0034ba,
+    0.2vw 0vw 5vw #0034ba, 0.1vw 0vw 8vw #002992, 0.2vw 0vw 30vw #002992,
+    0.2vw 0vw 10vw #002992;
   transition: 50ms;
 }
 
@@ -128,17 +129,53 @@ h3{
   box-shadow: 5px 5px #666;
   transform: translateY(4px);
   transition: 60ms;
-  box-shadow: 
-  .1vw 0vw   2vw #d85723, .2vw 0vw   2vw #d85723, .2vw 0vw   2vw #d85723, 
-  .1vw 0vw   1vw #8f0416, .2vw 0vw   1vw #8f0416, .2vw 0vw   5vw #8f0416, 
-  .1vw 0vw  8vw #5c020e, .2vw 0vw  30vw #5c020e, .2vw 0vw  10vw #5c020e;
+  box-shadow: 0.1vw 0vw 2vw #d85723, 0.2vw 0vw 2vw #d85723,
+    0.2vw 0vw 2vw #d85723, 0.1vw 0vw 1vw #8f0416, 0.2vw 0vw 1vw #8f0416,
+    0.2vw 0vw 5vw #8f0416, 0.1vw 0vw 8vw #5c020e, 0.2vw 0vw 30vw #5c020e,
+    0.2vw 0vw 10vw #5c020e;
 }
 
-.hitpoints{
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: black;
+  margin: 15% auto;
+  padding: 20px;
+  width: 60%;
   color: white;
+  font-family: "Turret Road", cursive;
+  font-size: 30px;
+  text-shadow: 0.1vw 0vw 2vw #06d410, 0.2vw 0vw 2vw #06d410,
+    0.2vw 0vw 2vw #06d410, 0.1vw 0vw 1vw #037a09, 0.2vw 0vw 1vw #037a09,
+    0.2vw 0vw 5vw #037a09, 0.1vw 0vw 8vw #012403, 0.2vw 0vw 30vw #012403,
+    0.2vw 0vw 10vw #012403;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: green;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .body {
   height: 100vh;
 }
-

@@ -1,49 +1,59 @@
 <!DOCTYPE html>
-<html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="reset.css">
-        <link href="https://fonts.googleapis.com/css?family=Cabin|Turret+Road&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
-        <script src="main.js" async defer></script>
-    </head>
-    <body>
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin|Turret+Road&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="main.js" async defer></script>
+  </head>
+  <body>
     <section class="game-area">
-        <h1 class = "page-title">Alien Attack</h1>
-        <h3 class="summary">Click the spacecraft to fire at the Aliens</h3>
-        <section id="alien-territory">
-            <section class="queen-territory">
-                <p id = "queen" class = "queen" ><span class="hitpoints"></span></p>
-            </section>
-
-            <section class="worker-territory">
-                <p class="worker" > <span class="hitpoints"></span></p>
-                <p class="worker" ><span class="hitpoints"></span></p>
-                <p class="worker" ><span class="hitpoints"></span></p>
-                <p class="worker" ><span class="hitpoints"></span></p>
-                <p class="worker" ><span class="hitpoints"></span></p>
-            </section>
-            <section class="drone-territory">
-                <p class="drone" ><span class="hitpoints"></span></p>
-                <p class="drone" ><span class="hitpoints"></span></p>
-                <p class="drone" ><span class="hitpoints"></span></p>
-                <p class="drone" ><span class="hitpoints"></span></p>
-                <p class="drone" ><span class="hitpoints"></span></p>
-                <p class="drone" ><span class="hitpoints"></span></p>
-                <p class="drone" ><span class="hitpoints"></span></p>
-                <p class="drone" ><span class="hitpoints"></span></p>
-            </section>
+      <h1 class="page-title">Alien Attack</h1>
+      <h2 class="summary">Click the spacecraft to fire at the Aliens</h2>
+      <section id="alien-territory">
+        <section class="queen-territory">
+          <p id="queen" class="queen"><span class="hitpoints"></span></p>
         </section>
 
-        <section id="ship-territory">
-            <span id="ship" onclick="fire(aliens)"></span>
+        <section class="worker-territory">
+          <p class="worker"><span class="hitpoints"></span></p>
+          <p class="worker"><span class="hitpoints"></span></p>
+          <p class="worker"><span class="hitpoints"></span></p>
+          <p class="worker"><span class="hitpoints"></span></p>
+          <p class="worker"><span class="hitpoints"></span></p>
         </section>
-    
+        <section class="drone-territory">
+          <p class="drone"><span class="hitpoints"></span></p>
+          <p class="drone"><span class="hitpoints"></span></p>
+          <p class="drone"><span class="hitpoints"></span></p>
+          <p class="drone"><span class="hitpoints"></span></p>
+          <p class="drone"><span class="hitpoints"></span></p>
+          <p class="drone"><span class="hitpoints"></span></p>
+          <p class="drone"><span class="hitpoints"></span></p>
+          <p class="drone"><span class="hitpoints"></span></p>
+        </section>
+      </section>
+
+      <section id="ship-territory">
+        <span id="ship" onclick="fire(aliens)"></span>
+      </section>
     </section>
 
-    </body>
+    
+  </body>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>The Aliens gave up and went home</h3>
+    </div>
+  </div>
 </html>
