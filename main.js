@@ -17,8 +17,6 @@ class Alien {
     console.log("my new HP is: " + this.hitPoints);
     this.checkHP();
   }
-
-
 }
 
 class Worker extends Alien {
@@ -27,7 +25,7 @@ class Worker extends Alien {
 }
 
 class Drone extends Alien {
-    //drones are currently just generic aliens for now 
+  //drones are currently just generic aliens for now
 }
 
 class Queen extends Alien {
@@ -46,14 +44,13 @@ class Ship {
 
 const battleStarGalatica = new Ship();
 
-const initialiseScoresOnScreen = (arrayOfAliens) => {
-  let elements = [...document.getElementsByClassName('hitpoints')];
+const initialiseScoresOnScreen = arrayOfAliens => {
+  let elements = [...document.getElementsByClassName("hitpoints")];
 
-  for (let i = 0; i<elements.length;i++){
+  for (let i = 0; i < elements.length; i++) {
     elements[i].innerHTML = arrayOfAliens[i].hitPoints;
   }
-
-}
+};
 
 const createAliens = () => {
   const numQueen = 1;
@@ -80,15 +77,15 @@ const createAliens = () => {
 
   arrayOfAliens = [queen, workers, drones].flat();
   initialiseScoresOnScreen(arrayOfAliens);
-  return arrayOfAliens
+  return arrayOfAliens;
 };
 
 const aliens = createAliens();
 
 const checkAlien = (listOfAliens, alienHit) => {
   if (listOfAliens[alienHit].isDead) {
-      let elements = [...document.getElementsByTagName('p')];
-      elements[alienHit].classList.add('isDead');
+    let elements = [...document.getElementsByTagName("p")];
+    elements[alienHit].classList.add("isDead");
 
     console.log("ALIEN " + alienHit + " IS ALREADY DEAD");
     return false;
@@ -98,26 +95,24 @@ const checkAlien = (listOfAliens, alienHit) => {
 };
 
 const gameOver = () => {
-  
   const modal = document.getElementById("myModal");
   const span = document.getElementsByClassName("close")[0];
- 
+
   modal.style.display = "block";
   span.onclick = function() {
     modal.style.display = "none";
     location.reload();
-  }
-  
-  
+  };
 };
 
-const updateHTMLWithPoints=(listOfAliens, alienHit)=>{
-  let elements = [...document.getElementsByClassName('hitpoints')];
+const updateHTMLWithPoints = (listOfAliens, alienHit) => {
+  let elements = [...document.getElementsByClassName("hitpoints")];
   elements[alienHit].innerHTML = listOfAliens[alienHit].hitPoints;
-  elements[alienHit].classList.add('hipoints-explosion');
-  setTimeout(function(){ elements[alienHit].classList.remove('hipoints-explosion'); }, 1000);
-}
-
+  elements[alienHit].classList.add("hipoints-explosion");
+  setTimeout(function() {
+    elements[alienHit].classList.remove("hipoints-explosion");
+  }, 1000);
+};
 
 const fire = aliens => {
   const listOfAliens = aliens;
