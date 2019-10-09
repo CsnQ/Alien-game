@@ -98,8 +98,17 @@ const checkAlien = (listOfAliens, alienHit) => {
 };
 
 const gameOver = () => {
-  alert("game Over");
-  location.reload();
+  
+  const modal = document.getElementById("myModal");
+  const span = document.getElementsByClassName("close")[0];
+ 
+  modal.style.display = "block";
+  span.onclick = function() {
+    modal.style.display = "none";
+    location.reload();
+  }
+  
+  
 };
 
 const updateHTMLWithPoints=(listOfAliens, alienHit)=>{
