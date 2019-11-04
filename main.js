@@ -99,9 +99,9 @@ const gameOver = () => {
 const updateHTMLWithPoints = (listOfAliens, alienHit) => {
   let elements = [...document.getElementsByClassName("hitpoints")];
   elements[alienHit].innerHTML = listOfAliens[alienHit].hitPoints;
-  elements[alienHit].classList.add("hipoints-explosion");
+  elements[alienHit].classList.add("hitpoints-explosion");
   setTimeout(function() {
-    elements[alienHit].classList.remove("hipoints-explosion");
+    elements[alienHit].classList.remove("hitpoints-explosion");
   }, 1000);
 };
 
